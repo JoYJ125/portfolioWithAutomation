@@ -1,0 +1,27 @@
+[
+  {
+    "title": "부산 관광지 소개 홈페이지 (ARATA BUSAN)",
+    "category": "풀스택 프로젝트",
+    "description": "사용자 편의성과 반응형 UI를 고려하여 구축한 부산 관광지 안내 웹 서비스입니다.",
+    "technologies": [
+      "HTML/CSS",
+      "JavaScript",
+      "Java",
+      "SQL",
+      "Spring Boot"
+    ]
+  },
+  {
+    "title": "애니핑 - 관리자 시스템 개발",
+    "category": "풀스택 프로젝트",
+    "description": "SQL 스키마 설계부터 시작하여 React와 Spring Boot를 연동한 애니사이트의 안정적인 관리자 아키텍처를 구축했습니다.",
+    "technologies": [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "Java",
+      "SQL",
+      "Spring Boot"
+    ]
+  }
+]
