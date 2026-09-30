@@ -127,6 +127,12 @@ def main():
             title = escape(str(project.get('title', '')))
             category = escape(str(project.get('category', '')))
             description = escape(str(project.get('description', '')))
+            url = escape(str(project.get('url', '')))
+            url_html = (
+                f'                <a class="project-url" href="{url}" target="_blank" '
+                f'rel="noopener noreferrer">{url}</a>'
+                if url else ''
+            )
             technologies = project.get('technologies', [])
             if not isinstance(technologies, list):
                 technologies = []
@@ -141,6 +147,7 @@ def main():
                 <p>{description}</p>
                 <div class="badge-container">
 {badges_html}                </div>
+{url_html}
             </div>"""
         html_content = replace_section(
             html_content,
