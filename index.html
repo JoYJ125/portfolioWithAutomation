@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조유정 — 포트폴리오</title>
+    <style>
+        :root {
+            --bg-color: #d2e5ff;
+            --card-bg: #e3efff;
+            --text-main: #13233a;
+            --text-body: #344963;
+            --text-sub: #4d6788;
+            --accent-color: #0879e8;
+            --accent-warm: #b45309;
+            --border-color: #9ebde5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 2.5rem 1.25rem;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0 2.25rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2.75rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .tagline {
+            max-width: 48rem;
+            margin: 0 auto 1.25rem;
+            font-size: 1.05rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            border-left: 3px solid var(--accent-color);
+            padding-left: 0.8rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.4rem 1.5rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .card h3 {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            color: var(--accent-color);
+            margin-bottom: 0.45rem;
+        }
+
+        .card .date {
+            font-size: 0.82rem;
+            color: var(--text-sub);
+            margin-bottom: 0.65rem;
+            display: block;
+        }
+
+        p {
+            color: var(--text-body);
+            margin-bottom: 0.9rem;
+            font-size: 0.98rem;
+            line-height: 1.85;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .bio-part + .bio-part {
+            border-top: 1px solid var(--border-color);
+            margin-top: 1.35rem;
+            padding-top: 1.25rem;
+        }
+
+        .bio-part h3 {
+            color: var(--accent-warm);
+            margin-bottom: 0.6rem;
+        }
+
+        .bio-part p {
+            max-width: none;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: var(--text-body);
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            font-size: 0.96rem;
+            line-height: 1.75;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.85rem;
+        }
+
+        .badge {
+            background-color: #d9eaff;
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            padding: 0.28rem 0.6rem;
+            border-radius: 5px;
+            font-size: 0.82rem;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+
+            header {
+                padding: 1.5rem 0 1.75rem;
+                margin-bottom: 2rem;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            .card {
+                padding: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 첫 화면 & 한 줄 소개 -->
+        <header>
+            <h1>조유정</h1>
+            <p class="tagline">역경을 디버깅하고 묵묵히 쌓아 올린 튼튼한 코드로 시스템을 지키는 엔지니어 조유정입니다.</p>
+            <p class="contact">📧 이메일: dbwjd125@gmail.com</p>
+        </header>
+
+        <!-- 기술 스택 섹션 -->
+        <section>
+            <h2>0. Technical Stack</h2>
+            <div class="card">
+                <p>시스템 안정성과 인프라 보안을 지향하며 다뤄온 주요 기술입니다.</p>
+                <div class="badge-container">
+                    <span class="badge">Python</span>
+                    <span class="badge">Linux Networking</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">HTML/CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">React</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">REST API</span>
+                    <span class="badge">Spring Boot</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 자기소개 -->
+        <section>
+            <h2>1. 자기소개</h2>
+
+            <div class="card intro-card">
+                <article class="bio-part">
+                    <h3>1. 긍정적인 둔감력과 단단한 내면: 시련을 성장의 자양분으로 바꾸는 힘</h3>
+                    <p>열일곱 살, 갑작스럽게 마주한 낯선 교실은 냉랭한 경계심으로 가득했습니다. 하지만 저는 남들의 시선이나 미세한 평가에 흔들리기보다 타인의 모난 구석까지 무던하게 받아쳐 내는 '긍정적인 둔감력'으로 제 자리를 지켜냈습니다. 먼저 손을 내미는 진심을 통해, 차가웠던 아이들의 경계심을 따뜻한 온기로 녹여낼 수 있었습니다. 이러한 성정은 이후 제 삶에 닥쳐온 더 큰 파도를 마주할 때마다 저를 지탱해 준 가장 단단한 갑옷이 되었습니다.</p>
+                </article>
+                <article class="bio-part">
+                    <h3>2. 예기치 못한 폭풍 속에서 찾아낸 진짜 주도권</h3>
+                    <p>대학 진학 후, 준비했던 해외 교환학생 프로그램은 2020년 전 세계를 강타한 팬데믹으로 인해 전면 취소되는 아픔을 겪었습니다. 수년간 쌓아 올린 노력이 한 장의 이메일로 물거품이 된 순간이었지만, 저는 주저앉아 원망하는 대신 시선을 모니터 속 검은 터미널 창으로 돌렸습니다. 국경과 언어의 장벽이 없는 개발과 인프라의 세계야말로 제가 스스로 세상을 향해 그어볼 수 있는 가장 확실한 새로운 지도임을 깨달았기 때문입니다.</p>
+                </article>
+                <article class="bio-part">
+                    <h3>3. 입사 후 포부: 단단한 인프라와 안정적인 패킷을 쏘아 올리는 엔지니어</h3>
+                    <p>시련이 찾아올 때마다 저는 불안에 휩쓸리는 대신 로그를 분석하듯 객관적으로 상황을 수용하고 해결책을 찾아왔습니다. 고요 속에서 다져진 단단한 내면과, 겉치레가 아닌 시스템의 생태계를 꿰뚫어 보는 '새로운 시선', 그리고 리눅스 서버와 네트워크 구조를 다루는 실무적 역량은 저만의 확실한 무기입니다.</p>
+                    <p>체계적이고 안정적인 인프라 환경 속에서, 대규모 시스템이 중단 없이 구동될 수 있도록 백본을 지탱하는 단단한 백엔드·인프라 보안 엔지니어로 성장하겠습니다. 세상이 그어준 지도가 아닌, 제 손으로 직접 증명해 낸 실력과 진심으로 귀사의 안정적인 성장에 기여하겠습니다.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 본편 이야기 (assignments.json 자동 주입 영역) -->
+        <section>
+            <h2>2. 장점</h2>
+            <!-- @ASSIGNMENTS_START@ -->
+
+            <div class="card">
+                <h3>대인관계력</h3>
+                <p>전학 및 팀 프로젝트 소통</p>
+                <p><strong>근거:</strong> 초기 낯선 환경 극복 및 피드백 수용</p>
+            </div>
+            <div class="card">
+                <h3>자기동기력</h3>
+                <p>교환학생 무산 후 개발이라는 새로운 목표 구축</p>
+                <p><strong>근거:</strong> 외부 변수 속 목표 재설정</p>
+            </div>
+            <div class="card">
+                <h3>자기조절력</h3>
+                <p>질환 극복 및 페이스 조절</p>
+                <p><strong>근거:</strong> 휴식 루틴 및 감정 조절 체득</p>
+            </div>
+<!-- @ASSIGNMENTS_END@ -->
+        </section>
+
+        <!-- 13주 리추얼 기록 자동 요약 영역 -->
+        <section>
+            <h2>3. 13주 리추얼 기록</h2>
+            <div class="card" style="margin-top: 1rem;">
+                <h3>리추얼에서 자주 나온 주제 TOP 3</h3>
+                <ul>
+                    <!-- @RITUAL_START@ -->
+<li><strong>소통과 경청</strong> (125개 문장)<br>팀 활동에서 대화를 나누고 상대의 말을 경청하며 편안한 분위기를 만드는 모습이 반복됐습니다.</li>
+<li><strong>긍정과 여유</strong> (87개 문장)<br>긍정적인 태도와 적절한 휴식으로 자신의 페이스를 조절하려는 모습이 나타났습니다.</li>
+<li><strong>성실과 책임</strong> (68개 문장)<br>미리 준비하고 맡은 일을 끝까지 해내려는 책임감과 실행력이 반복해서 확인됐습니다.</li>
+
+<!-- @RITUAL_END@ -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- 대표작 및 연구 성과 -->
+        <section>
+            <h2>4. 대표작</h2>
+            <!-- @PROJECTS_START@ -->
+
+            <div class="card">
+                <h3>부산 관광지 소개 홈페이지 (ARATA BUSAN)</h3>
+                <span class="date">풀스택 프로젝트</span>
+                <p>사용자 편의성과 반응형 UI를 고려하여 구축한 부산 관광지 안내 웹 서비스입니다.</p>
+                <div class="badge-container">
+                    <span class="badge">HTML/CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Spring Boot</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>애니핑 - 관리자 시스템 개발</h3>
+                <span class="date">풀스택 프로젝트</span>
+                <p>SQL 스키마 설계부터 시작하여 React와 Spring Boot를 연동한 애니사이트의 안정적인 관리자 아키텍처를 구축했습니다.</p>
+                <div class="badge-container">
+                    <span class="badge">HTML/CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">React</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Spring Boot</span>
+                </div>
+            </div>
+<!-- @PROJECTS_END@ -->
+        </section>
+
+        <footer>
+            <p>&copy; 2026 조유정. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
